@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/jogoDaVelha.css" />
     <script src="src/jogoDaVelha.js" defer></script>
-    <title>Jogo da Velha #</title>
+    <title>Jogo da Velha</title>
   </head>
   <body>
     <section id="into">
-      <h1>Jogo Da Velha</h1>
+      <h1>Jogo Da Velha &#x1F475;</h1>
       <hr />
-      <br />
 
       <label for="player1">X</label>
       <input type="text" name="player1" id="player1" placeholder="Jogador 1" />
@@ -21,17 +20,19 @@
       <button id="start">Começar!</button>
 
       <h2>Vez de: <span id="turnPlayer"></span></h2>
-      <section id="gameBoard">
-        <span data-region="0.0"></span>
-        <span data-region="0.1"></span>
-        <span data-region="0.2"></span>
-        <span data-region="1.0"></span>
-        <span data-region="1.1"></span>
-        <span data-region="1.2"></span>
-        <span data-region="2.0"></span>
-        <span data-region="2.1"></span>
-        <span data-region="2.2"></span>
-      </section>
+      <div id="board">
+        <section id="gameBoard">
+          <span data-region="0.0"></span>
+          <span data-region="0.1"></span>
+          <span data-region="0.2"></span>
+          <span data-region="1.0"></span>
+          <span data-region="1.1"></span>
+          <span data-region="1.2"></span>
+          <span data-region="2.0"></span>
+          <span data-region="2.1"></span>
+          <span data-region="2.2"></span>
+        </section>
+      </div>
     </section>
   </body>
 </html>

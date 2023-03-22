@@ -94,7 +94,8 @@ function handleWin(regions) {
       .classList.add("win")
   })
   const playerName = document.getElementById(turnPlayer).value
-  document.querySelector("h2").innerHTML = playerName + " venceu!" + "\u{1F603}"
+  document.querySelector("h2").innerHTML =
+    playerName + " venceu! " + "\u{1F603}"
 }
 
 function handleBoardClick(ev) {
@@ -125,7 +126,7 @@ function handleBoardClick(ev) {
     turnPlayer = turnPlayer === "player1" ? "player2" : "player1"
     updateTitle()
   } else {
-    document.querySelector("h2").innerHTML = "Empate!"
+    document.querySelector("h2").innerHTML = "Empate! " + "\u{1F642}"
   }
 }
 // Adiciona o evento no botão que inicia o jogo
