@@ -94,7 +94,7 @@ function handleWin(regions) {
       .classList.add("win")
   })
   const playerName = document.getElementById(turnPlayer).value
-  document.querySelector("h2").innerHTML = playerName + " venceu!"
+  document.querySelector("h2").innerHTML = playerName + " venceu!" + "\u{1F603}"
 }
 
 function handleBoardClick(ev) {
@@ -130,5 +130,3 @@ function handleBoardClick(ev) {
 }
 // Adiciona o evento no botão que inicia o jogo
 document.getElementById("start").addEventListener("click", initializeGame)
-
-getEl
